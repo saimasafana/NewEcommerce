@@ -1,18 +1,14 @@
 import axios from "axios";
 import '../App.css';
-import {useEffect,useState}
-from "react";
+import {useEffect,useState} from "react";
 
-import ProductCard
-from "../components/ProductCard";
+import ProductCard from "../components/ProductCard";
 
 function Home(){
 
- const [products,setProducts]=
- useState([]);
+ const [products,setProducts]=useState([]);
 
- const [search,setSearch]=
- useState("");
+ const [search,setSearch]=useState("");
 
  // FETCH PRODUCTS
 

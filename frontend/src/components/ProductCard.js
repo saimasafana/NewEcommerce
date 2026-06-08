@@ -17,6 +17,8 @@ function ProductCard({product,addToCart}){
         .then(()=>{
             alert("added to wishlist");
         })
+        
+        
 
     }
     return(
