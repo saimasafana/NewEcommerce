@@ -21,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&#h*^y@ao2y9&(jpo9b=mxsfp@oex75gg@k$1+^!zqrb#65acu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -153,5 +152,5 @@ MEDIA_URL='/media/'
 MEDIA_ROOT=BASE_DIR / 'media'
 STATIC_ROOT=BASE_DIR/'staticfiles'
 
-STATIC_URL='static/'
+STATIC_URL='/static/'
 DEFAULT_AUTO_FIELD="django.db.models.BigAutoField"
