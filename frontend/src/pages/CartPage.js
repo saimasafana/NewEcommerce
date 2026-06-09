@@ -6,7 +6,7 @@ function CartPage(){
     const[cart,setCart]=useState([]);
 
     const fetchCart=()=>{
-         axios.get("http://127.0.0.1:8000/api/cart/")
+         axios.get("https://newecommerce-3.onrender.com/api/cart/")
         .then(res=>setCart(res.data));
 
     }
@@ -15,7 +15,7 @@ function CartPage(){
     },[]);
 
     const removeItem=(id)=>{
-        axios.delete(`http://127.0.0.1:8000/api/cart/${id}/`)
+        axios.delete(`https://newecommerce-3.onrender.com/api/cart/${id}/`)
         .then (()=>{
             alert("item removed");
             fetchCart();

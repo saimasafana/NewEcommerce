@@ -7,13 +7,12 @@ function ProductCard({product,addToCart}){
     
     console.log("product data",product);
     const addToWishlist=(product)=>{
-        axios.post("http://127.0.0.1:8000/api/wishlist/",
-            {
-                 product:product.id
-
-            }
-
-        )
+        axios.post(
+    "https://newecommerce-3.onrender.com/api/wishlist/",
+    {
+        product: product.id
+    }
+)
         .then(()=>{
             alert("added to wishlist");
         })

@@ -7,7 +7,7 @@ function ProductDetails() {
     const {id}=useParams()
     const [product,setProduct]=useState({});
     useEffect(()=>{
-        axios.get(`http://127.0.0.1:8000/api/products/${id}`)
+        axios.get(`https://newecommerce-3.onrender.com/api/products/${id}`)
         .then(res=>{setProduct(res.data)
     })
     

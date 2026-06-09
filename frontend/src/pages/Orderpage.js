@@ -19,7 +19,7 @@ function Orderpage() {
         setForm({...form,[e.target.name]:e.target.value})
     }
     const placeOrder=()=>{
-        axios.post("http://127.0.0.1:8000/api/order/",form)
+        axios.post("https://newecommerce-3.onrender.com/api/order/", form)
         .then(()=>{
             alert("order placed successfully");
             navigate("/");

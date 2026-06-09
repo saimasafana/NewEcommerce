@@ -16,7 +16,7 @@ function Home(){
 
   axios.get(
 
-   `http://127.0.0.1:8000/api/products/?search=${search}`
+    `https://newecommerce-3.onrender.com/api/products/?search=${search}`
 
   )
 
@@ -40,7 +40,7 @@ function Home(){
 
   axios.post(
 
-   "http://127.0.0.1:8000/api/cart/",
+   "https://newecommerce-3.onrender.com/api/cart/",
 
    {
     product:product.id,
