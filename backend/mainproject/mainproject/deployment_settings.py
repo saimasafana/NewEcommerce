@@ -1,5 +1,7 @@
 import os
 import dj_database_url
+
+DATABASE_URL = os.environ.get("DATABASE_URL")
 from .settings import *
 # ALLOWED_HOSTS=[os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 ALLOWED_HOSTS=['.onrender.com']
