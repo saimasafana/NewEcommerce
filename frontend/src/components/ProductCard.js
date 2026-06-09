@@ -24,7 +24,11 @@ function ProductCard({product,addToCart}){
         <div>
     <div className="card">
         <Link to={`/product/${product.id}`}>
-        <img src={product.image} alt="" style={{width:"200px",height:"200px"}}/>
+        <img
+  src={`https://newecommerce-3.onrender.com${product.image}`}
+  alt=""
+  style={{width:"200px",height:"200px"}}
+/>
         </Link>
         <h3>{product.name}</h3>
         <p> ₹{product.price}</p>

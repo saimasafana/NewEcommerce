@@ -21,7 +21,7 @@ function ProductDetails() {
 })
     return (
         <div style={{padding:"30px"}}>
-            <img src={product.image} alt="" width="300"/>
+             <img src={`https://newecommerce-3.onrender.com${product.image}`} alt="" width="300" />
             <h2>{product.price}</h2>
             <p>{product.description}</p>
             <p>{product.stock}</p>

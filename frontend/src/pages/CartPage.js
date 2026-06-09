@@ -27,8 +27,12 @@ function CartPage(){
         <h2>Cart items</h2>
         {cart.map(item=>(
             <div className="cart-item" key={item.id}>
-                <img src={item.product_image} alt={item.product_name} width="250" height="250"/>
-                <h1>{item.product_name}</h1>
+<img 
+  src={`https://newecommerce-3.onrender.com${item.product_image}`} 
+  alt={item.product_name} 
+  width="250" 
+  height="250"
+/>                <h1>{item.product_name}</h1>
                 <h2>{item.product_price}</h2>
                 <h3>product ID:{item.product}</h3>
 
