@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'newecommerce-3.onrender.com','localhost','127.0.0.1'
 ]
-USE_X_FORWARDED_HOST=True
+#USE_X_FORWARDED_HOST=True
 # Application definition
 
 INSTALLED_APPS = [
