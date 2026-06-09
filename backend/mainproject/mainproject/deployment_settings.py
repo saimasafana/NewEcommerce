@@ -10,9 +10,10 @@ CSRF_TRUSTED_ORIGINS=['https://*.onrender.com']
 DEBUG=False
 SECRET_KEY=os.environ.get('SECRET_KEY')
 MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+
     'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -20,6 +21,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+STATIC_URL='/static'
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STORAGES={
     "default":
     
@@ -29,7 +32,7 @@ STORAGES={
     },
     "staticfiles":{
 
-        "BACKEND":"whitenoise.storage.CompressedStaticFilesStorage",
+        "BACKEND":"whitenoise.storage.CompressedManifestStaticFilesStorage",
     }
 }
 
