@@ -6,12 +6,12 @@ class CategorySerializer(serializers.ModelSerializer):
         fields='__all__'
         
 class ProductSerializer(serializers.ModelSerializer):
-    image = serializers.SerializerMethodField()
+    #image = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
         fields = '__all__'
 
-    def get_image(self, obj):
-        request = self.context.get('request')
-        return request.build_absolute_uri(obj.image.url)
+    # def get_image(self, obj):
+    #     request = self.context.get('request')
+    #     return request.build_absolute_uri(obj.image.url)
